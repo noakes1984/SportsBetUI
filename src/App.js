@@ -16,7 +16,7 @@ class App extends Component {
   async componentDidMount() {
     const manager = await lottery.methods.manager().call();
     const players = await lottery.methods.getPlayers().call();
-    const contracts = await PizzeriaFactory.methods.pizzeriaFactories().call();
+    //const contracts = await PizzeriaFactory.methods.pizzeriaFactories().call();
     //const list = await lottery.methods.getContracts().call();
     const balance = await web3.eth.getBalance(lottery.options.address);
 
